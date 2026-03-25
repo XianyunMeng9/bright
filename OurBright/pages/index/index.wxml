@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<!-- 摄像头区域 -->
+<camera 
+  device-position="back" 
+  flash="off" 
+  binderror="error" 
+  style="width: 100%; height: 70vh;">
+</camera>
+
+<!-- 拍照按钮 -->
+<button type="primary" bindtap="takePhoto" style="margin: 30rpx;">拍照识别</button>
+
+<!-- 结果显示区域 -->
+<view style="padding: 20rpx; text-align: center;">
+  <text style="font-size: 32rpx;">识别结果：{{result}}</text>
+</view>
